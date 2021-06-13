@@ -1,17 +1,17 @@
 <html manifest="offlinexmb.cache">
 <head>
-<title>PSxplot Host Auto-load GoldHen</title>
+<title>PSxplot-7.55 Host Auto-load GoldHen 1.0</title>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%"};
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.msgs.innerHTML="Turn Off the Internet & Reopen to Run the Webkit!!";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
 <body style="background-color:#003791;color:white;font-size:20px;text-align:center;" onload="go();">
-<h1 id=msgs style='font-size:20px;text-align:center;color:white'>Prb 7.55 Exploit Menu V4 Super Lite Update</h1>
-<div id=dlog></div>
-<button style=opacity:0 id="input1" onfocus="handle2()"></button>
-<button style=opacity:0 id="input2"></button>
-<button style=opacity:0 id="input3" onfocus="handle2()"></button>
-<select style=opacity:0 id="select1">
+<h1 id="msgs" style='font-size:20px;text-align:center;color:white'>Prb 7.55 Exploit Menu V4 Super Lite Update</h1>
+<div id="dlog"></div>
+<button style="opacity:0" id="input1" onfocus="handle2()"></button>
+<button style="opacity:0" id="input2"></button>
+<button style="opacity:0" id="input3" onfocus="handle2()"></button>
+<select style="opacity:0" id="select1">
 <option value="value1">Value1</option>
 </select>
 <script src="common/utils.js"></script>
@@ -54,8 +54,8 @@ mymenu.style.display="block";
 	}, 1000);
 };
 </script>
-      <div id=mymenu style="text-align:center;display:none">
-<div text-align= center>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
+      <div id="mymenu" style="text-align:center;display:none">
+<div text-align="center">Pass = <span id="passCounter"></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id="failCounter"></span></div>
 <div style="width:100%;font-size:20px;color:white">
 PS4 Firmware <span id="PS4fw"></span></div>
      <br><div style='font-size:20px;color:red'>EXPLOIT</div>
@@ -129,7 +129,6 @@ PS4 Firmware <span id="PS4fw"></span></div>
       <button onMouseOver="msgs.innerHTML='Fan Control Set Temp 85c. Set Fan Threshold The PS4 default temp is 79°C.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite Update'" onclick="load_fancontrol85(); return false">fan 85c</button>
       <button onMouseOver="msgs.innerHTML='Fan Control Set Temp 90c. Set Fan Threshold The PS4 default temp is 79°C.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite Update'" onclick="load_fancontrol90(); return false">fan 90c</button>
 	  <div style="text-align:center;position:fixed;left:10px;bottom:10px;width:100%;font-size:20px;color:white">Massive Thanks - Leeful - KiiWii - Sleirsgoevy - theflow - Al Azif - Joonie86 - And Many More</div>
-     
 	</div>
 
  <script>
